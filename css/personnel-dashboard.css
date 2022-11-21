@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    width: 100%;
+}
+
+header{
+	background-color: #262626;
+	padding-bottom: 20px;
+	position: relative;
+	z-index: 2;
+}
+
+header .leftArea{
+	margin-left: 60px;
+}
+
+header .leftArea img{
+	width: 33%;
+	margin-top: -15px;
+}
+
+.block{
+    background-color: #B48834;
+    height: 13px;
+}
+
+.sideBar{
+	z-index: 1;
+	top: 0;
+	background: #262626;
+	padding-top: 100px;
+	position: fixed;
+	left: 0;
+	width: 250px;
+	height: calc(110% - 1%);
+	transition: 0.4s;
+	transition-property: left;
+	overflow-y: auto;
+}
+
+.sideBar a{
+	color: #fff;
+	display: block;
+	width: 100%;
+	line-height: 60px;
+	text-decoration: none;
+	padding-left: 40px;
+	box-sizing: border-box;
+	transition: 0.5s;
+	transition-property: background;
+}
+
+.sideBar span{
+	font-family: 'Montserrat';
+	font-size: 13px;
+}
+
+.sideBar .label{
+	color: #fff;
+	font-weight: 600;
+	margin-left: 30px;
+}
+
+.sideBar a:hover{
+	background: #B48834;
+	color: #262626;
+}
+
+.sideBar i{
+	padding-right: 10px;
+    color: #fff;
+}
+
+.sideBar .drop{
+	padding-right: 100px;
+	line-height: 60px;
+	text-decoration: none;
+	font-family: 'Montserrat';
+	font-size: 15px;
+	color: #262626;
+	display: block;
+	border: none;
+	background: none;
+	width:100%;
+	cursor: pointer;
+	outline: none;
+	transition: 0.5s;
+	transition-property: background;
+}
+
+.sideBar .drop:hover {
+	background: #262626;
+	color: white;
+}
+
+.sideBar .drop.active{
+    background-color: #262626;
+    color: white;
+}
+
+.dropContainer {
+	display: none;
+	background: none;
+	margin-left: 50px;
+}
+
+.sideBar .dboard{
+   background: #B48834;
+   color: #262626;
+}
+
+label #menuBtn{
+	z-index: 1;
+	color: #fff;
+	position: fixed;
+	cursor: pointer;
+	font-size: 20px;
+	margin: 10px 25px 0 25px;
+	transition: 0.5s;
+	transition-property: color;
+}
+
+label #menuBtn:hover{
+	color: #b48834;
+}
+
+#check:checked ~.sideBar {
+	left: -185px;
+}
+
+#check:checked ~.sideBar a span{
+	display: none;
+}
+
+#check:checked ~.sideBar .label{
+	display: none;
+}
+
+#check:checked ~.sideBar a{
+	font-size: 20px;
+	margin-left: 165px;
+	width: 100%;
+}
+
+#check:checked ~.sideBar .drop{
+	padding-left: 205px;
+}
+
+#check:checked ~.sideBar .drop span{
+	display: none;
+}
+
+#check{
+	display: none;
+}
+
+.content{
+	width: (100% - 250px);
+	margin-left: 250px;
+	transition: 0.5s;
+    display: flex;
+}
+
+#check:checked ~.content{
+	margin-left: 65px;
+}
+
+#check:checked ~ .sideBar .userInfo{
+	display: none;
+}
+
+.block{
+    background-color: #B48834;
+    height: 13px;
+}
+
+/*CONTENT DESIGN*/
+.dashboard{
+    margin: 10px 20px 20px 20px;
+    width: 100%;
+}
+
+.dashboard h1{
+	font-family: 'Source Sans Pro';
+	font-weight: bold;
+}
+
+.notif-panel{
+    background-color: #e4e4e4;
+    width: 20%;
+    max-height: 200vh;
+    padding: 20px 15px 0 15px;
+}
+
+.notif-panel h5{
+    font-family: 'Source Sans Pro';
+    font-weight: 600;
+}
+
+.card{
+    margin-bottom: 10px;
+}
+
+.card-body .card-text,
+.card-text span{
+    font-family: 'Montserrat';
+    font-size: 13px;
+}
+
+.card-footer{
+    font-family: 'Montserrat';
+    font-size: 11px;
+}
+
+.ticket-counts,
+.ticket-stats,
+.cards{
+    padding: 10px 0 0 10px;
+    margin-bottom: 15px;
+    box-shadow: -2px 2px 5px #b5b5b5;
+}
+
+.ticket-counts span,
+.ticket-stats span,
+.bottom-data span{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 13px;
+    padding: 20px 0 10px 10px;
+}
+
+.circles{
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticket-count{
+    border-radius: 50%;
+    width: 80px;
+    height: 75px;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+}
+
+.ticket-count span{
+    margin-left: -10px;
+}
+
+#num-of-tix{
+    font-size: 25px;
+}
+
+#ticket-category{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 10px;
+}
+
+#tix-stat{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.bottom-data{
+    display: flex;
+    
+}
+
+.cards{
+    padding: 10px;
+    width: 50%;
+}
+
+#average-resol-time{
+	margin: 10%;
+    text-align: center;
+}
+
+.nav-item button{
+    color: #B48834;
+	font-family: 'Montserrat';
+	font-weight: 500;
+}
+
+.slaPie{
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.content{
+    margin: auto;
+}
+
+.content img{
+    width: 30rem;
+    display: block;
+    margin: 30px auto 15px auto;
+}
+
+.forgot{
+    background-color: #fff;
+    padding: 10px;
+    margin: 0 35% 0 35%;
+    box-shadow: -5px 5px 20px #b5b5b5;
+}
+
+.forgot h3{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+}
+
+.forgot hr{
+    width: 60%;
+    border: none;
+    height: 1px;
+    background-color: #000;
+    opacity: 30%;
+}
+
+.input-block{
+    margin-top: 20px;
+}
+
+input, label{
+    display: block;
+    font-family: 'Montserrat';
+    margin-left: 25px;
+}
+
+input{
+    padding: 10px;
+    font-size: 15px;
+    width: 80%;
+}
+
+label{
+    font-weight: 600;
+    font-size: 12px;
+}
+
+#email{
+    margin-bottom: 10px;
+}
+
+br{
+    clear: both;
+}
+
+.note{
+    font-family: 'Montserrat';
+    font-size: 12px;
+    text-align: center;
+    margin: 10px 10px 20px 10px;
+    color: #858585;
+}
+
+#sendlink{
+    background-color: #262626;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    padding: 10px 65px;
+    cursor: pointer;
+}
+
+.btn-group{
+    text-align: center;
+    margin-top: 15px;
+}

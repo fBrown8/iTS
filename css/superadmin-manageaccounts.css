@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+	background-color: #262626;
+	padding-bottom: 20px;
+	position: relative;
+	z-index: 2;
+}
+
+header .leftArea{
+	margin-left: 60px;
+}
+
+header .leftArea img{
+	width: 33%;
+	margin-top: -15px;
+}
+
+.block{
+    background-color: #B48834;
+    height: 13px;
+}
+
+.sideBar{
+	z-index: 1;
+	top: 0;
+	background: #262626;
+	padding-top: 100px;
+	position: fixed;
+	left: 0;
+	width: 250px;
+	height: calc(110% - 1%);
+	transition: 0.4s;
+	transition-property: left;
+	overflow-y: auto;
+}
+
+.sideBar a{
+	color: #fff;
+	display: block;
+	width: 100%;
+	line-height: 60px;
+	text-decoration: none;
+	padding-left: 40px;
+	box-sizing: border-box;
+	transition: 0.5s;
+	transition-property: background;
+}
+
+.sideBar span{
+	font-family: 'Montserrat';
+	font-size: 13px;
+}
+
+.sideBar .label{
+	color: #fff;
+	font-weight: 600;
+	margin-left: 30px;
+}
+
+.sideBar a:hover{
+	background: #B48834;
+	color: #262626;
+}
+
+.sideBar i{
+	padding-right: 10px;
+    color: #fff;
+}
+
+.sideBar .drop{
+	padding-right: 100px;
+	line-height: 60px;
+	text-decoration: none;
+	font-family: 'Montserrat';
+	font-size: 15px;
+	color: #262626;
+	display: block;
+	border: none;
+	background: none;
+	width:100%;
+	cursor: pointer;
+	outline: none;
+	transition: 0.5s;
+	transition-property: background;
+}
+
+.sideBar .drop:hover {
+	background: #262626;
+	color: white;
+}
+
+.sideBar .drop.active{
+    background-color: #262626;
+    color: white;
+}
+
+.dropContainer {
+	display: none;
+	background: none;
+	margin-left: 50px;
+}
+
+.sideBar .users{
+   background: #B48834;
+   color: #262626;
+}
+
+label #menuBtn{
+	z-index: 1;
+	color: #fff;
+	position: fixed;
+	cursor: pointer;
+	font-size: 20px;
+	margin: 10px 25px 0 25px;
+	transition: 0.5s;
+	transition-property: color;
+}
+
+label #menuBtn:hover{
+	color: #b48834;
+}
+
+#check:checked ~.sideBar {
+	left: -185px;
+}
+
+#check:checked ~.sideBar a span{
+	display: none;
+}
+
+#check:checked ~.sideBar .label{
+	display: none;
+}
+
+#check:checked ~.sideBar a{
+	font-size: 20px;
+	margin-left: 165px;
+	width: 100%;
+}
+
+#check:checked ~.sideBar .drop{
+	padding-left: 205px;
+}
+
+#check:checked ~.sideBar .drop span{
+	display: none;
+}
+
+#check{
+	display: none;
+}
+
+.content{
+	width: (100% - 250px);
+	margin-top: 10px;
+	padding: 20px;
+	margin-left: 250px;
+	transition: 0.5s;
+}
+
+#check:checked ~.content{
+	margin-left: 80px;
+}
+
+#check:checked ~ .sideBar .userInfo{
+	display: none;
+}
+
+
+.block{
+    background-color: #B48834;
+    height: 13px;
+}
+
+/*CONTENT DESIGN*/
+.titleBar h1{
+    font-family: 'Source Sans Pro';
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+#personnel-tab,
+#endusers-tab{
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+.nav-item button{
+    color: #B48834;
+}
+
+.filterbar{
+    background-color: #e3e3e3;
+    padding: 20px;
+}
+
+.filter{
+    display: flex;
+    justify-content: space-between;
+}
+
+#roles{
+    padding: 5px 30px 5px 5px;
+    font-family: 'Montserrat';
+}
+
+.roles label{
+    font-family: 'Montserrat';
+}
+
+.add-new{
+    margin-right: 40px;
+}
+
+#addnewbtn{
+    background-color: #262626;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    padding: 7px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.roles,
+.button{
+    display: inline-block;
+}
+
+.numofusers,
+.search{
+    display: inline-block;
+}
+
+.top{
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.numofusers h5,
+.numofusers span{
+    font-family: 'Montserrat';
+    font-size: 13px;
+}
+
+.search{
+    margin-right: 30px;
+}
+
+.search button{
+    border: none;
+    background-color: #fff;
+    margin-left: 8px;
+}
+
+label,
+select{
+	display: block;
+    font-family: 'Montserrat';
+}
+
+label{
+	text-align: left;
+    font-family: 'Montserrat';
+}
+	
+input{
+	width: 200px;
+}
+
+select{
+    width: 300px;
+    height: 30px;
+}
+
+#department option{
+    font-family: 'Montserrat';
+}
+
+.input-block,
+.options{
+    flex-basis: 100px;
+    margin: 5px;
+}
+
+/*TABLE*/
+table{
+    table-layout: fixed;
+    width: 100%;
+}
+
+.app-list thead tr {
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    font-weight: bold;
+}
+  
+.app-list th, .app-list td {
+    padding: 12px;
+    font-family: 'Montserrat';
+    font-size: 13px;
+}
+  
+.app-list tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.app-list thead{
+    color:#000;
+    font-size: 13px;
+}
+
+.action-buttons .btn-row-delete{
+    margin-left: 10px;
+}
+
+.action-buttons button{
+    border: none;
+    padding: 5px;
+}

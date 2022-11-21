@@ -1,0 +1,95 @@
+/* internal */
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f6f9fc;
+}
+
+table {
+	border-spacing: 0;
+}
+
+td {
+	padding: 0;
+}
+
+img {
+	border: 0;
+}
+
+.wrapper {
+	width: 100%;
+	table-layout: fixed;
+	background-color: #f6f9fc;
+	padding-bottom: 40px;
+}
+
+.webkit {
+	max-width: 600px;
+	background-color: #ffffff;
+}
+
+.outer {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 600px;
+	border-spacing: 0;
+	font-family: "Montserrat", sans-serif;
+	color: #4a4a4a;
+}
+
+.outer hr {
+	background: #fdbf15;
+	border: 1px solid #fdbf15;
+}
+
+.outer h1 {
+	display: inline;
+	font-family: "Montserrat", sans-serif;
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: 700;
+	position: relative;
+	bottom: 20px;
+	color: #000000;
+}
+
+/* Main */
+.main {
+	font-family: "Montserrat", sans-serif;
+}
+
+.main p {
+	text-align: justify;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.main h1 {
+	margin-left: 20px;
+	font-size: 1.4em;
+}
+
+/* Reset Button */
+
+#reset-btn {
+	background-color: #262626;
+	color: #fff;
+	font-family: "Montserrat";
+	font-weight: 500;
+	padding: 10px 186px;
+	margin: 0 auto;
+	cursor: pointer;
+	display: block;
+	justify-content: center;
+	align-items: center;
+	border: none;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 400px) {
+}

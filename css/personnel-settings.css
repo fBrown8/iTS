@@ -1,0 +1,544 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+.nav-link, .dropdown-item{
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+
+.container-fluid img{
+    width: 30rem;
+}
+
+nav{
+    background-color: #262626;
+}
+
+.nav-item i{
+    color: #FDBF15;
+}
+
+.nav-link{
+    margin: 0 13px;
+}
+
+.block{
+    background-color: #B48834;
+    height: 13px;
+}
+
+/* Footer */
+footer{
+    background-color: #262626;
+    padding: 15px;
+}
+
+.footer-content img{
+    width: 15rem;
+    margin-left: 10px;
+}
+
+.footer-content{
+    display: flex;
+}
+
+.credits{
+    font-family: 'Montserrat';
+    color: #fff;
+    font-size: 10px;
+    text-align: right;
+    position: absolute;
+    right: 0px;
+    margin-right: 20px;
+}
+
+/* sidebar */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+	background-color: #262626;
+	padding-bottom: 20px;
+	position: relative;
+	z-index: 2;
+}
+
+header .leftArea{
+	margin-left: 60px;
+}
+
+header .leftArea img{
+	width: 33%;
+	margin-top: -15px;
+}
+
+.block{
+    background-color: #B48834;
+    height: 13px;
+}
+
+.sideBar{
+	z-index: 1;
+	top: 0;
+	background: #262626;
+	padding-top: 100px;
+	position: fixed;
+	left: 0;
+	width: 250px;
+	height: calc(110% - 1%);
+	transition: 0.4s;
+	transition-property: left;
+	overflow-y: auto;
+}
+
+.sideBar a{
+	color: #fff;
+	display: block;
+	width: 100%;
+	line-height: 60px;
+	text-decoration: none;
+	padding-left: 40px;
+	box-sizing: border-box;
+	transition: 0.5s;
+	transition-property: background;
+}
+
+.sideBar span{
+	font-family: 'Montserrat';
+	font-size: 13px;
+}
+
+.sideBar .label{
+	color: #fff;
+	font-weight: 600;
+	margin-left: 30px;
+}
+
+.sideBar a:hover{
+	background: #B48834;
+	color: #262626;
+}
+
+.sideBar i{
+	padding-right: 10px;
+    color: #fff;
+}
+
+.sideBar .drop{
+	padding-right: 100px;
+	line-height: 60px;
+	text-decoration: none;
+	font-family: 'Montserrat';
+	font-size: 15px;
+	color: #262626;
+	display: block;
+	border: none;
+	background: none;
+	width:100%;
+	cursor: pointer;
+	outline: none;
+	transition: 0.5s;
+	transition-property: background;
+}
+
+.sideBar .drop:hover {
+	background: #262626;
+	color: white;
+}
+
+.sideBar .drop.active{
+    background-color: #262626;
+    color: white;
+}
+
+.dropContainer {
+	display: none;
+	background: none;
+	margin-left: 50px;
+}
+
+.sideBar .settings{
+   background: #B48834;
+   color: #262626;
+}
+
+label #menuBtn{
+	z-index: 1;
+	color: #fff;
+	position: fixed;
+	cursor: pointer;
+	font-size: 20px;
+	margin: 10px 25px 0 25px;
+	transition: 0.5s;
+	transition-property: color;
+}
+
+label #menuBtn:hover{
+	color: #b48834;
+}
+
+#check:checked ~.sideBar {
+	left: -185px;
+}
+
+#check:checked ~.sideBar a span{
+	display: none;
+}
+
+#check:checked ~.sideBar .label{
+	display: none;
+}
+
+#check:checked ~.sideBar a{
+	font-size: 20px;
+	margin-left: 165px;
+	width: 100%;
+}
+
+#check:checked ~.sideBar .drop{
+	padding-left: 205px;
+}
+
+#check:checked ~.sideBar .drop span{
+	display: none;
+}
+
+#check{
+	display: none;
+}
+
+.content{
+	width: (100% - 250px);
+	margin-top: 10px;
+	padding: 20px;
+	margin-left: 250px;
+	transition: 0.5s;
+}
+
+#check:checked ~.content{
+	margin-left: 80px;
+}
+
+#check:checked ~ .sideBar .userInfo{
+	display: none;
+}
+
+.active {
+	background-color: #B48834;
+	color: white;
+}
+
+.block{
+    background-color: #B48834;
+    height: 13px;
+}
+
+/* body */
+
+
+.container-content{
+    max-width: 100%;
+    width: 100%;
+    padding-left: 130px;
+}
+
+.container-content hr{
+    height: 1px;
+    color: #000000;
+    background-color: #000000;
+    border: none;
+    width: 100%;
+}
+
+.container-content .title{
+    font-family: 'Source Sans Pro';
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 26px;
+}
+
+.container-content h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 34px;
+    color: #000000;
+}
+
+.container-content form{
+    max-width: 80%;
+    width: 100%;
+    padding: 25px 30px;
+}
+
+.container-content form .user-details, 
+.change-password{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 30px;
+}
+
+
+form .user-details .input-box, 
+.change-password .input-box,
+.new{
+    width: calc(100% / 2 - 30px);    
+}
+
+.user-details .input-box input, 
+.change-password .input-box input{
+    height: 40px;
+    width: 100%;
+    font-family: 'Montserrat';
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #EAEAEA;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    
+}
+
+.change-password .new .input-box{
+    width: 100%;
+}
+
+.user-details .input-box .details,
+.change-password .input-box .details,
+.input-box label{
+    font-weight: 500;
+    /* margin-bottom: 5px; */
+    font-family: 'Montserrat';
+    font-size: 15px;
+    line-height: 33px;
+
+}
+
+
+/* Button */
+
+.reset-pwbtn{
+    margin-bottom: 30px;
+}
+.reset-pwbtn button{
+    background: #262626;
+    color: #ffffff;
+    border: 0;
+    padding: 10px 28px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    float: right;
+    
+
+}
+
+
+/* Indicator */
+
+.indicator{
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 25px;
+    display: none;
+}
+
+.indicator span{
+    width: 100%;
+    height: 50%;
+    background: lightgrey;
+    border-radius: 5px;
+    position: relative;
+    font-size: 1px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width:480px) and (max-width: 768px){
+
+    header .leftArea img {
+        width: 15rem;
+        margin-top: -15px;
+    }
+
+    .container-content{
+        padding-left: 15%;
+    }
+
+    .container-content hr{
+        width: 90%;
+        /* margin: 0%; */
+    }
+
+    .container-content form{
+        padding: 1% 4%;
+    }
+
+    .container-content .title {
+        font-size: 145%;
+        margin-top: 5%;
+    }
+
+    .container-content h3{
+        font-size: 85%;
+    }
+
+    form .user-details .input-box, 
+    .change-password .input-box, 
+    .new{
+        width: 100%;
+    }
+
+    .container-content form .user-details, 
+    .change-password{
+        flex-direction: column;
+        padding-left: 3%;
+    }
+
+    .user-details .input-box .details, 
+    .change-password .input-box .details, 
+    .input-box label{
+        font-size: 80%;
+    }
+
+    .reset-pwbtn button{
+        padding: 2% 5%;
+        font-size: 75%;
+        margin: 5% 0 5% 0%;
+    }    
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+
+    .container-content{
+        padding-left: 14%;
+    }
+
+    .container-content .title{
+        font-size: 150%;
+    }
+    header .leftArea img{
+        width: 20rem
+    }
+
+    .container-content hr{
+        width: 90%;
+    }
+
+    .container-content h3{
+        font-size: 85%;
+    }
+
+    .user-details .input-box .details, 
+    .change-password .input-box .details, 
+    .input-box label{
+        font-size: 80%;
+    }
+
+    .user-details .input-box input, 
+    .change-password .input-box input{
+        font-size: 80%;
+    }
+
+    .reset-pwbtn button{
+        font-size: 80%;
+        margin: 5% 0 5% 0%;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1290px){
+    .container-fluid img{
+        width: 25rem
+    }
+
+    .container-content {
+        width: 100%;
+        /* padding-left: 5%; */
+        max-width: 100%;
+    }
+
+    .container-content .title{
+        font-size: 185%;
+        margin-top: 4%;
+    }
+
+    body .container-content hr{
+        width: 95%;
+    }
+
+    .container-content h3{
+        font-size: 90%;
+    }
+
+    .container-content form{
+        padding: 0% 5%;
+        overflow-y: scroll;
+        max-width: 90%;
+    }
+
+    .container-content form .user-details,
+    .change-password{
+        padding-left: 3%;
+        /* flex-direction: row; */
+        width: 90%;
+    }
+
+    .reset-pwbtn button{
+        margin: 5% 10% 5% 0%;
+    }
+}
+
+
+@media screen and (min-width:1291px) and (max-width: 1440px){ 
+    
+    header .leftArea img{
+        width: 30rem
+    }
+    
+    .container-content .title{
+        font-size: 200%;
+    }
+
+    .container-content{
+        width: 95%;
+    }
+
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+    header .leftArea img{
+        width: 30rem
+    }
+
+    .container-content .title{
+        font-size: 250%;
+    }
+
+    .container-content{
+        width: 95%;
+    }
+
+    .user-details .input-box .details, 
+    .change-password .input-box .details, 
+    .input-box label{
+        font-size: 120%;
+    }
+
+    .user-details .input-box input, 
+    .change-password .input-box input{
+        height: 50px;
+        font-size: 120%;
+    }
+
+    .reset-pwbtn button{
+        font-size: 120%;
+    }
+}

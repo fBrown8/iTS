@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.content{
+    margin: auto;
+}
+
+.content img{
+    width: 30rem;
+    display: block;
+    margin: 30px auto 15px auto;
+}
+
+.verify{
+    background-color: #fff;
+    padding: 10px;
+    margin: 0 35% 0 35%;
+    box-shadow: -5px 5px 20px #b5b5b5;
+}
+
+.verify h3{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+}
+
+.verify i{
+    width: 100px;
+    color: #0FA958;
+}
+
+.verify p{
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+
+.btn-group{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#resend-email{
+    background-color: #262626;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    padding: 10px 50px 10px 50px;
+    cursor: pointer;
+}
+
+.no-email{
+    font-size: 13px;
+}

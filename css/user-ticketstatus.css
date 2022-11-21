@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+:root {
+    --primary-color: rgb(180, 136, 52);
+  }
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-link, .dropdown-item{
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+
+.container-fluid img{
+    width: 30rem;
+}
+
+nav{
+    background-color: #262626;
+}
+
+.nav-item i{
+    color: #FDBF15;
+}
+
+.nav-link{
+    margin: 0 13px;
+}
+
+.block{
+    background-color: #B48834;
+    height: 13px;
+}
+
+/*Content*/
+.tixstat{
+    margin: 0;
+    display: grid;
+    place-items: center;
+    margin-bottom: 50px;
+}
+
+.status-details{
+    background-color: #fff;
+    padding: 25px;
+    margin: 0 150px 20px 150px;
+    border-radius: 7px;
+    box-shadow: -5px 5px 20px #b5b5b5;
+}
+
+.app-list{
+    width: 100%;
+}
+
+.app-list thead tr {
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    font-weight: bold;
+}
+  
+.app-list th, .app-list td {
+    padding: 12px;
+    font-family: 'Montserrat';
+    font-size: 13px;
+}
+  
+.app-list tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.app-list thead{
+    color:#737373;
+    font-size: 13px;
+}
+
+#status-info{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#comment{
+    font-style: 'Montserrat';
+    font-weight: 200;
+    font-size: 12px;
+}
+
+#status-activity{
+    width: 60%;
+}
+
+#status-assigned,
+#status-date{
+    width: 20%;
+}
+
+.title,
+.button{
+    display: inline-block;
+}
+
+.button{
+    margin-left: 42%;
+    margin-bottom: 30px;
+}
+
+#return{
+    background-color: #262626;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    padding: 7px;
+    font-weight: 600;
+}
+
+
+/*Progress Bar*/
+.progressbar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    counter-reset: step;
+    padding: 5px;
+}
+
+.progressbar::before, 
+.bar{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    height: 10px;
+    width: 80%;
+    background-color: #c4c4c4;
+    z-index: -1;
+}
+
+.bar{
+    background-color: var(--primary-color);
+    width: 0%;
+    transition: 0.3s;
+}
+
+.progress-step{
+    width: 3rem;
+    height: 3rem;
+    background-color: #c4c4c4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 85px 0px 85px;
+}
+
+.progress-step::before{
+    counter-increment: step;
+    content: counter(step);
+    font-size: 30px;
+    font-family: 'Montserrat';
+    font-style: bold;
+    color: #fff;
+}
+
+.progress-step::after{
+    content: attr(data-title);
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    font-size: 0.85rem;
+    font-family: 'Montserrat';
+    color: #666;
+}
+
+.progress-step-active{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.title h2{
+    font-family: 'Source Sans Pro';
+    font-weight: 700;
+    font-size: 30px;
+    margin: 30px 0 30px 150px;
+}
+
+/*FOOTER*/
+footer{
+    background-color: #262626;
+    padding: 15px;
+}
+
+.footer-content img{
+    width: 15rem;
+    margin-left: 10px;
+}
+
+.footer-content{
+    display: flex;
+}
+
+.credits{
+    font-family: 'Montserrat';
+    color: #fff;
+    font-size: 10px;
+    text-align: right;
+    position: absolute;
+    right: 0px;
+    margin-right: 20px;
+}
